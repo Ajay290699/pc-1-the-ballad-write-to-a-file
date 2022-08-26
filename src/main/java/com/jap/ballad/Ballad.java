@@ -31,7 +31,7 @@ public class Ballad {
         FileOutputStream fileOutputStream = null;
         String ballad = "";
         try {
-            fileOutputStream = new FileOutputStream("ballad.txt");
+            fileOutputStream = new FileOutputStream(fileName);
             for (int i = 0; i < data.length(); i++) {
                 char value = data.charAt(i);
                 fileOutputStream.write(value);
